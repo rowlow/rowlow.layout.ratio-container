@@ -1,0 +1,22 @@
+{
+  "name": "rowlow.layout.ratio-container",
+  "version": "0.1.0",
+  "homepage": "http://rowlow.github.io",
+  "authors": [
+    "Roland Lösslein <info@weaintplastic.com>"
+  ],
+  "description": "A module for creating DOM container with a defined aspect ratio for ROW LOW framework",
+  "main": "main.scss",
+  "keywords": [
+    "ratio",
+    "rowlow"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
