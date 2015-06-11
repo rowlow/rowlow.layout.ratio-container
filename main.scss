@@ -3,7 +3,7 @@
 @import 'functions';
 
 
-.#{$rowlow-ratio-container-namespace}ratio-block{
+.#{$rowlow-ratio-container-namespace}ratio-container{
 	position: relative;
 	&:before{
 		content: '';
@@ -21,8 +21,8 @@
 @each $breakpoint-name, $breakpoint-value in $rowlow-breakpoints {
 	@media (min-width: $breakpoint-value + px) {
 		@each $rowlow-ratio in $rowlow-ratios {
-			.#{$rowlow-ratio-container-namespace}ratio-block--#{$breakpoint-name}--#{nth($rowlow-ratio, 1)}by#{nth($rowlow-ratio, 2)}{
-				@extend .#{$rowlow-ratio-container-namespace}ratio-block;
+			.#{$rowlow-ratio-container-namespace}ratio-container--#{$breakpoint-name}--#{nth($rowlow-ratio, 1)}by#{nth($rowlow-ratio, 2)}{
+				@extend .#{$rowlow-ratio-container-namespace}ratio-container;
 				&:before{
 					padding-top: nth($rowlow-ratio, 2)/nth($rowlow-ratio, 1) * 100%;
 				}
